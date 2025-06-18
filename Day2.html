@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music & Pet App</title>
+  <style>
+    :root {
+      --primary: #6c63ff;
+      --bg: #f4f4f8;
+      --card-bg: #ffffff;
+      --text: #222;
+      --muted: #777;
+      --shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      --radius: 16px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      background: linear-gradient(to bottom right, #fefcea, #f1da36);
+      color: var(--text);
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--primary);
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+    
+    .pet-h1 {
+      text-align: center;
+      color: var(--primary);
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+
+    .music-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .track-card {
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      background: linear-gradient(to bottom right, #fa9450, #daec34);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+
+    .track-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .track-thumb {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    .track-info {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .track-info strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+
+    .track-info em {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .pet-section {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .pet-card {
+      max-width: 400px;
+      margin: auto;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+
+    .pet-card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .pet-card h2 {
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🎵 My Music</h1>
+
+  <div class="music-grid">
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2025/02/Premalo-Court.jpg" class="track-thumb">
+      <div class="track-info"><strong>Premalo Court</strong><em>Synthwave Dreams</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2025/02/Premalo-Court.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2025/03/Prema-Velluva.jpg" class="track-thumb">
+      <div class="track-info"><strong>Prema Velluva</strong><em>Synthwave Dreams</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2025/03/Prema-Velluva.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2025/06/Minnalvala.jpg" class="track-thumb">
+      <div class="track-info"><strong>Minnalvala</strong><em>Synthwave Dreams</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2025/06/Minnalvala.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2023/02/Jai-Bhavani-Jai-Shivaji.jpg" class="track-thumb">
+      <div class="track-info"><strong>Jai Bhavani Jai Shivaji</strong><em>Power Anthem</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2023/02/JAI-BHAVANI-JAI-SHIVAJI-SONG.mp3"
+          type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2025/03/Chhava-Theme.jpg" class="track-thumb">
+      <div class="track-info"><strong>Chhava Theme</strong><em>Epic Score</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2025/03/Chhava-Theme.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2025/03/Hey-Minnale.jpg" class="track-thumb">
+      <div class="track-info"><strong>Hey Minnale</strong><em>Romantic Hits</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2025/03/Hey-Minnale.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2025/03/Alappara-Theme.jpg" class="track-thumb">
+      <div class="track-info"><strong>Alappara Theme</strong><em>Background Score</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2025/03/Alappara-Theme.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2025/02/tu-ishq-hai-to-main-bahon-mein-hoon.jpg"
+        class="track-thumb">
+      <div class="track-info"><strong>Tu Ishq Hai</strong><em>Love Ballads</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2025/02/tu-ishq-hai-to-main-bahon-mein-hoon.mp3"
+          type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2025/02/Aaya-Re-Toofan.jpg" class="track-thumb">
+      <div class="track-info"><strong>Aaya Re Toofan</strong><em>Energetic Beats</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2025/02/Aaya-Re-Toofan.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2024/01/Kesariya-Rangu-Kannada.jpg" class="track-thumb">
+      <div class="track-info"><strong>Kesariya Rangu</strong><em>Regional Vibes</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2023/12/Kesariya-Brahmastra.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2023/06/Deva-Deva-Slowed-Reverb.jpg" class="track-thumb">
+      <div class="track-info"><strong>Deva Deva (Slowed + Reverb)</strong><em>Spiritual Chill</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2023/06/Deva-Deva-Slowed-Reverb.mp3"
+          type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2024/02/Mehabooba-Tamil.jpg" class="track-thumb">
+      <div class="track-info"><strong>Mehabooba (Tamil)</strong><em>Romantic Melody</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2024/02/Mehabooba-Tamil.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2024/01/Inkem-Inkem-Kaavaale.jpg" class="track-thumb">
+      <div class="track-info"><strong>Inkem Inkem Kaavaale</strong><em>Love Ballad</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2024/01/Inkem-Inkem-Kaavaale.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2023/06/Tu-Hi-Hai-Aashiqui-Solo.jpg" class="track-thumb">
+      <div class="track-info"><strong>Tu Hi Hai Aashiqui</strong><em>Romantic Solo</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2023/06/Tu-Hi-Hai-Aashiqui-Solo.mp3"
+          type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2023/10/Meri-Aashiqui-Pasand-Aaye.jpg" class="track-thumb">
+      <div class="track-info"><strong>Meri Aashiqui</strong><em>Emotional Romance</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2023/10/Meri-Aashiqui-Pasand-Aaye.mp3"
+          type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2023/11/Ae-Dil-Hai-Mushkil-Instrumental-1.jpg"
+        class="track-thumb">
+      <div class="track-info"><strong>Ae Dil Hai Mushkil (Instrumental)</strong><em>Instrumental Feels</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2023/11/Ae-Dil-Hai-Mushkil-Instrumental.mp3"
+          type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2025/03/Hukum-%E2%80%93-Thalaivar-Alappara.jpg"
+        class="track-thumb">
+      <div class="track-info"><strong>Hukum – Thalaivar Alappara</strong><em>Mass Tamil Beat</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2025/03/Hukum-%E2%80%93-Thalaivar-Alappara.mp3"
+          type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2023/12/Dolby-Walya-In-Animal.jpg" class="track-thumb">
+      <div class="track-info"><strong>Dolby Walya</strong><em>Beast Mode</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2023/12/Dolby-Walya-In-Animal.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2023/12/Animal-Bobby-Deol-Entrance.jpg"
+        class="track-thumb">
+      <div class="track-info"><strong>Animal - Bobby Deol Entrance</strong><em>Dark Theme</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2023/12/Animal-Bobby-Deol-Entrance.mp3"
+          type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="track-card">
+      <img src="https://pagallworld.co.in/wp-content/uploads/2023/10/Ladki-Beautiful-Kar-Gayi-Chull.jpg"
+        class="track-thumb">
+      <div class="track-info"><strong>Ladki Beautiful</strong><em>Party Anthem</em></div>
+      <audio controls>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2023/10/Ladki-Beautiful-Kar-Gayi-Chull.mp3"
+          type="audio/mpeg">
+      </audio>
+    </div>
+
+    <h1 style="text-align: center;">🐶 Pet App</h1><br>
+    <section class="pet-section">
+      <div class="pet-card">
+        <img src="https://th.bing.com/th/id/OIP.EEYdxfAvHpf4ZV99spCHzAHaE8?r=0&rs=1&pid=ImgDetMain" />
+        <h2>Simba</h2>
+        <p>Simba is my energetic Siberian Husky who loves snowy walks, howling at music, and chasing squirrels. ❄️🐺</p>
+      </div>
+    </section>
+
+</body>
+
+</html>
